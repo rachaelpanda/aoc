@@ -6,7 +6,8 @@ import proj1
 
 
 def determine_location(directions, whorizontal=0, vertical=0, aim=0):
-    """From our start horizontal and vertical locations, determine where we end up from our directions"""
+    """From our start horizontal and vertical locations, determine where we end up from our more complicated
+    directions"""
     for movement in directions:
         direction, units = movement.split(' ')
         units = int(units)
