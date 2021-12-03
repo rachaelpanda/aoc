@@ -6,8 +6,9 @@ import proj1
 
 
 def get_sum_depth(depth_list, n=3):
+    """Get the number of times the sum of 3 iterations has increased"""
     count = 0
-    # Create our deque object with first 3 elements in the depth list with the max length of 3
+    # Create our deque object with first 3 elements in the depth list with the max length of n
     d = deque(depth_list[:3], n)
     previous_sum = sum(d)
     # skipping the first 3 elements, loop through depth list and get the sum of our deque object
