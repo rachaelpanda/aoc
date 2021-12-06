@@ -10,11 +10,11 @@ def get_data(data_file):
     return lines
 
 
-def find_fish_count(fish_count, days):
+def find_fish_count(fish_count, days=80, fish_life_span=9):
     """For the number of days passed, determine the reproduction rate of our fishies"""
     for day in range(days):
         tomorrow_fish = dict()
-        for index in range(9):
+        for index in range(fish_life_span):
             index_str = str(index)
             if index_str not in tomorrow_fish:
                 tomorrow_fish[index_str] = 0
@@ -35,8 +35,7 @@ def find_fish_count(fish_count, days):
 
 if __name__ == '__main__':
     data_file = 'fishy.txt'
-    day_count_down = 80
     diagnostics = get_data(data_file)
     orig_fish_count = Counter(diagnostics)
-    current_fish_count = find_fish_count(orig_fish_count, day_count_down)
+    current_fish_count = find_fish_count(orig_fish_count)
     print(sum(current_fish_count.values()))
