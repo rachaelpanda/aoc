@@ -11,6 +11,7 @@ def get_data(data_file):
 
 
 def find_fish_count(fish_count, days):
+    """For the number of days passed, determine the reproduction rate of our fishies"""
     for day in range(days):
         tomorrow_fish = dict()
         for index in range(9):
