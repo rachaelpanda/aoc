@@ -5,6 +5,7 @@ import proj1
 
 def gas_usage(steps):
     """Find the total gas usage from the steps taken"""
+    # THANKS Scott <3
     return int(steps * steps / 2 + steps / 2)
 
 
