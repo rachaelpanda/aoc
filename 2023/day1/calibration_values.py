@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import re
+# import re
 
 def read_file(file):
     """open file and return list of lines"""
@@ -13,7 +13,9 @@ def read_file(file):
 def concat(a, b):
     return int(f"{a}{b}")
 
+
 def get_numbers(lines):
+    # dang number clashing! oneight, threeight, eightwo, etc
     conversion_dict = {
         "one": "o1e",
         "two": "t2o",
@@ -85,7 +87,7 @@ def get_numbers(lines):
 
 
 if __name__ == '__main__':
-    file = 'puzzle_input.txt'
+    file = 'input.txt'
     lines = read_file(file)
     totals = get_numbers(lines)
     print(f"{sum(totals)} is the calibration number")
