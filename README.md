@@ -1,3 +1,3 @@
 # Advent of Code
 
-Let's get boofy
+Fun time coding with friends
