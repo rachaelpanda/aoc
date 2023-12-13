@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 
 import math
-import pprint
-pp = pprint.PrettyPrinter(indent=4)
 
 
 def read_file(file):
@@ -98,6 +96,7 @@ def part_two_ig(character_dict):
                     pt_two_gears_list.append(result)
                 part_two_digit_dict = dict()
     return pt_two_gears_list
+
 
 def unhinged_elves(character_dict):
     part_one_digit_dict = dict()
